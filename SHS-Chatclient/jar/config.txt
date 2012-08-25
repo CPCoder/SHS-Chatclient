@@ -1,0 +1,27 @@
+hostname=example.org
+port=9090
+comstring=/servlet/jfchat
+startroom=Lobby
+username=
+password=
+#### BUTTON-Konfiguration ####
+# Befehl zum auflisten der Räume (Standard: /wc)
+com_wc=/wc
+# Befehl zum auflisten der User im Raum (Standard: /w)
+com_w=/w
+# Hier kann ein eigener Text für die Titelleiste des Clientfensters vergeben werden
+# Dieser Text wird da statt des Standard Fenstertitels angezeigt.
+# Beispiel: windowtitle=Name meiner Community
+windowtitle=Name meiner Community
+
+#### AB HIER NUR ÄNDERUNGEN DURCHFÜHREN WENN IHR GENAU WISST WAS IHR MACHT!!! ####
+# URL zur Community-Startseite (Seite nach dem Login)
+comurl=http://{hostname}:{port}{comstring};jsessionid={sessionid}?showhtml=comframeset&design=0
+# Url zum Forum
+forumurl=http://{hostname}:{port}{comstring};jsessionid={sessionid}?auth=&forum=main&design=0
+# Url zur Mailbox
+mailurl=http://{hostname}:{port}{comstring};jsessionid={sessionid}?auth=&mail=in&design=0
+# Url zu den Emoticons
+emourl=http://{hostname}:{port}/EMOS
+# Eintragung innerhalb in der Datenbank
+emodb=../EMOS
